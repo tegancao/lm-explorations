@@ -1,0 +1,8 @@
+\usepackage{fvextra}
+\directlua{luaotfload.add_fallback("fb", {"STIX Two Text:mode=harf;", "STIX Two Math:mode=harf;", "Apple Symbols:mode=harf;", "Hiragino Sans:mode=harf;", "Menlo:mode=harf;", "Arial Unicode MS:mode=harf;"})}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=fb}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=fb}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=fb}]
+\usepackage{xurl}
+\setlength{\emergencystretch}{3em}
+\renewcommand{\arraystretch}{1.15}
