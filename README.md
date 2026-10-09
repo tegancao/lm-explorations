@@ -44,7 +44,6 @@ Hugging Face `transformers` on CPU. Without uv: `pip install -r demos/tiny-chat/
 | [**notes/scaling**](notes/scaling/memory-compute-sharding.md) | Training memory, MFU, and how FSDP/ZeRO-3 shards a model across GPUs (with a diagram) |
 | [**engineering**](engineering/compute-and-cloud.md) | Practical lessons from training on a laptop and rented cloud GPUs |
 | [**reflections**](reflections) | Dated entries on what I learned and what surprised me |
-| [**tools/md2pdf**](tools/md2pdf) | Markdown → LaTeX-typeset PDF (pandoc + LuaLaTeX) |
 
 ## Models
 

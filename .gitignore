@@ -9,5 +9,3 @@ __pycache__/
 *.pkl
 data/
 out/
-*.aux
-*.log
