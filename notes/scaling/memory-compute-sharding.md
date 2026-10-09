@@ -17,8 +17,7 @@ FLOP/s ≈ 6 × parameters × tokens per second (forward ≈ 2 FLOPs per paramet
 H100 peak: ≈ 990 TFLOP/s (bf16, dense) or ≈ 495 (TF32).
 
 - Good large runs reach **30–50%**.
-- My 45M model on an L4 reached only **~4%**: its matrix multiplies are small, so per-step overhead dominates. With
-  batch size 1 it was 3× slower per token still.
+- My 45M model on an L4 reached only **~4%**: its matrix multiplies are small, so per-step overhead dominates.
 - Bigger models mean bigger matmuls and higher arithmetic intensity, so MFU rises, until memory limits force small
   per-GPU batches, recomputation and communication.
 
@@ -81,7 +80,7 @@ Sharding itself is about **memory**: it adds communication, so each GPU is sligh
 from **data parallelism**: N GPUs process N micro-batches per step, so the same tokens take about 1/N of the time.
 FSDP does both at once. The price is a little more total GPU time, for a lot less waiting. Speedup isn't unlimited:
 communication grows relative to compute, and beyond a "critical batch size" a larger global batch no longer cuts the
-number of steps proportionally (my own small-scale batch-size runs showed diminishing returns, too).
+number of steps proportionally.
 
 ## Compute estimate: what would GPT-2 XL cost?
 
