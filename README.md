@@ -3,6 +3,15 @@
 My notes, experiments and reflections while learning how language models work, by building and training them from
 scratch.
 
+## Setup
+
+With [uv](https://docs.astral.sh/uv/) (installs Python 3.12 and the pinned dependencies from `uv.lock`):
+
+```
+uv sync
+uv run demos/tiny-chat/chat.py        # chat with the TinyStories model
+```
+
 ## Contents
 
 | | |

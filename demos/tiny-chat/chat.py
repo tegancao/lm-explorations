@@ -1,8 +1,8 @@
 """Tiny chat: type a prompt, get generated text back, from two small models trained from scratch.
 
-    pip install -r requirements.txt
-    python chat.py                  # TinyStories model (tegancao/tinystories-22m)
-    python chat.py --model owt      # OpenWebText model  (tegancao/owt-45m)
+    uv run demos/tiny-chat/chat.py                  # TinyStories model (tegancao/tinystories-22m)
+    uv run demos/tiny-chat/chat.py --model owt      # OpenWebText model  (tegancao/owt-45m)
+    (or: pip install -r requirements.txt; python chat.py)
 
 These are base language models, not chat models: they CONTINUE your text rather than answer it.
 Commands: /more  /temp X  /top_p X  /tokens N  /model [tinystories|owt]  /settings  /help  /quit

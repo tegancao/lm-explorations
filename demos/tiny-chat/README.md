@@ -5,11 +5,16 @@ Hugging Face: [`tegancao/tinystories-22m`](https://huggingface.co/tegancao/tinys
 [`tegancao/owt-45m`](https://huggingface.co/tegancao/owt-45m). You type a prompt and get back up to 250 generated
 tokens, streamed as they're produced.
 
+From the repo root, with [uv](https://docs.astral.sh/uv/):
+
 ```
-pip install -r requirements.txt
-python chat.py                  # TinyStories model (default)
-python chat.py --model owt      # OpenWebText model
+uv sync
+uv run demos/tiny-chat/chat.py                  # TinyStories model (default)
+uv run demos/tiny-chat/chat.py --model owt      # OpenWebText model
 ```
+
+Without uv: `pip install -r demos/tiny-chat/requirements.txt`, then `python demos/tiny-chat/chat.py`. The models
+download from Hugging Face on first run (91 MB and 181 MB).
 
 The sessions below are real and unedited. I recorded them with my original from-scratch implementation, which uses the
 same weights. `chat.py` samples through Hugging Face `transformers` instead, so the same seed gives different (but

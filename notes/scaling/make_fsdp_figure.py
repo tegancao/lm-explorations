@@ -2,7 +2,7 @@
 
 Numbers use the published GPT-2 XL size (~1.5B parameters) in float32 with AdamW:
 parameters 4 B + gradients 4 B + AdamW m and v 8 B = 16 bytes per parameter = 24 GB, or 3 GB per GPU on 8 GPUs.
-usage: python make_fsdp_figure.py   (needs matplotlib)
+usage (from the repo root): uv run notes/scaling/make_fsdp_figure.py
 """
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch, Rectangle
