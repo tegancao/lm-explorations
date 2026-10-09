@@ -3,6 +3,11 @@
 My notes, experiments and reflections while learning how language models work, by building and training them from
 scratch.
 
+**Who this is for:** anyone learning how language models work who wants to see a from-scratch project end to end,
+including what goes wrong. You'll find two small models you can chat with (and see clearly what base models can and
+can't do), compact notes on why training large models is hard, practical lessons from training on a laptop and a
+cheap rented GPU, and reflections on what building it all myself taught me.
+
 ## Setup
 
 With [uv](https://docs.astral.sh/uv/) (installs Python 3.12 and the pinned dependencies from `uv.lock`):
