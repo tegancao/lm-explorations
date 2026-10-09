@@ -9,6 +9,10 @@ A few moments where building it myself made the difference:
 
 - **Positional encodings only clicked when I looked at the actual numbers.** I understood RoPE from the equations,
   but only after printing and visualizing the tensors, step by step, did I really see what gets rotated and why.
+  I also hadn't realized *where* it goes: RoPE rotates the queries and keys **after** their weight projections, and
+  is not applied to the values at all. That makes sense once you see that position only needs to shape *which*
+  tokens attend to each other (the query–key dot product, which then depends only on their relative distance),
+  not *what* information gets passed along (the values).
 - **Back-of-the-envelope math became real.** Counting parameters, FLOPs and memory on paper felt abstract until the
   same reasoning predicted the out-of-memory error I then hit on a real GPU.
 - **Each design choice has a reason, and you can watch it fail without it.** Removing pieces of the architecture and
