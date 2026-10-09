@@ -32,5 +32,5 @@ Both are small, educational base models: fun to explore, not for any real use. S
 
 ## Acknowledgments
 
-My first models follow the architecture and training setup in the publicly available materials of Stanford CS336
-(Language Modeling from Scratch).
+My first models follow the architecture and training setup in the publicly available materials of Stanford CS336,
+Language Modeling from Scratch: [cs336.stanford.edu](https://cs336.stanford.edu/).
