@@ -19,11 +19,5 @@
 | [`tegancao/tinystories-22m`](https://huggingface.co/tegancao/tinystories-22m) | TinyStories | 22.7M | 1.382 | 4.0 | ~3.1 h |
 | [`tegancao/owt-45m`](https://huggingface.co/tegancao/owt-45m) | OpenWebText | 45.2M | 4.154 | 63.7 | ~4.5 h |
 
-<!-- TODO (me): what I learned from the runs, in my own words. Ideas:
-     - why the same model ends so much higher on web text
-     - what the learning-rate search taught me (where training became unstable, and why)
-     - what removing pieces of the architecture showed (normalization, position information)
-     - batch size vs. speed on a small GPU
-     Figures: decide which of my own plots to add here. -->
 
 Try the models: [`demos/tiny-chat`](../../demos/tiny-chat).
