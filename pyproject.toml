@@ -9,6 +9,7 @@ dependencies = [
     "torch>=2.4",
     "transformers>=4.45",
     "matplotlib>=3.8",
+    "scikit-learn>=1.9.1",
 ]
 
 [tool.uv]

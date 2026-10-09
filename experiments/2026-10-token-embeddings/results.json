@@ -1,0 +1,1414 @@
+{
+ "TinyStories 22M": {
+  "vocab": 10000,
+  "validation_chars": 22493387,
+  "validation_tokens": 5465909,
+  "A_words_used": 69,
+  "A_silhouette": 0.107,
+  "A_silhouette_shuffled_groups": -0.034,
+  "B_anisotropy": {
+   "input": {
+    "mean_cos": 0.017,
+    "std_cos": 0.065
+   },
+   "output": {
+    "mean_cos": 0.559,
+    "std_cos": 0.218
+   },
+   "output, centered": {
+    "mean_cos": 0.006,
+    "std_cos": 0.321
+   },
+   "output, centered + top PC removed": {
+    "mean_cos": -0.0,
+    "std_cos": 0.14
+   },
+   "output_mean_vector_norm_vs_avg_token_norm": 0.749,
+   "output_cos_to_mean_rare_tokens(<5)": 0.9,
+   "output_cos_to_mean_common_tokens(>=1000)": 0.332,
+   "n_rare_tokens(<5)": 2481,
+   "n_common_tokens(>=1000)": 541,
+   "centered_output_variance_share_top3_PCs": [
+    0.304,
+    0.022,
+    0.011
+   ],
+   "corr_PC1_projection_vs_log_freq": 0.79
+  },
+  "B_output_neighbors": {
+   "dog": {
+    "raw": [
+     [
+      "dogs",
+      0.46
+     ],
+     [
+      "cat",
+      0.44
+     ],
+     [
+      "puppy",
+      0.34
+     ],
+     [
+      "Dog",
+      0.31
+     ],
+     [
+      "bear",
+      0.28
+     ],
+     [
+      "doggy",
+      0.28
+     ]
+    ],
+    "centered": [
+     [
+      "cat",
+      0.6
+     ],
+     [
+      "dogs",
+      0.5
+     ],
+     [
+      "bird",
+      0.48
+     ],
+     [
+      "boy",
+      0.44
+     ],
+     [
+      ",",
+      0.44
+     ],
+     [
+      "bear",
+      0.44
+     ]
+    ],
+    "centered_top_pc_removed": [
+     [
+      "cat",
+      0.55
+     ],
+     [
+      "dogs",
+      0.44
+     ],
+     [
+      "bird",
+      0.41
+     ],
+     [
+      "boy",
+      0.37
+     ],
+     [
+      "bear",
+      0.37
+     ],
+     [
+      "big",
+      0.36
+     ]
+    ]
+   },
+   "tree": {
+    "raw": [
+     [
+      "trees",
+      0.44
+     ],
+     [
+      "oak",
+      0.35
+     ],
+     [
+      "Tree",
+      0.33
+     ],
+     [
+      "bush",
+      0.33
+     ],
+     [
+      "branches",
+      0.32
+     ],
+     [
+      "ornaments",
+      0.31
+     ]
+    ],
+    "centered": [
+     [
+      "trees",
+      0.5
+     ],
+     [
+      "bird",
+      0.44
+     ],
+     [
+      ",",
+      0.42
+     ],
+     [
+      "big",
+      0.42
+     ],
+     [
+      "box",
+      0.42
+     ],
+     [
+      "the",
+      0.41
+     ]
+    ],
+    "centered_top_pc_removed": [
+     [
+      "trees",
+      0.42
+     ],
+     [
+      "bird",
+      0.35
+     ],
+     [
+      "big",
+      0.34
+     ],
+     [
+      "box",
+      0.34
+     ],
+     [
+      ",",
+      0.32
+     ],
+     [
+      "rock",
+      0.31
+     ]
+    ]
+   },
+   "mom": {
+    "raw": [
+     [
+      "Mom",
+      0.56
+     ],
+     [
+      "mommy",
+      0.51
+     ],
+     [
+      "dad",
+      0.48
+     ],
+     [
+      "Mom",
+      0.46
+     ],
+     [
+      "mother",
+      0.45
+     ],
+     [
+      "mum",
+      0.4
+     ]
+    ],
+    "centered": [
+     [
+      "Mom",
+      0.67
+     ],
+     [
+      "mommy",
+      0.63
+     ],
+     [
+      "dad",
+      0.61
+     ],
+     [
+      "mother",
+      0.56
+     ],
+     [
+      "Mom",
+      0.53
+     ],
+     [
+      "mum",
+      0.53
+     ]
+    ],
+    "centered_top_pc_removed": [
+     [
+      "Mom",
+      0.61
+     ],
+     [
+      "mommy",
+      0.56
+     ],
+     [
+      "dad",
+      0.54
+     ],
+     [
+      "mother",
+      0.48
+     ],
+     [
+      "Mom",
+      0.45
+     ],
+     [
+      "mum",
+      0.43
+     ]
+    ]
+   },
+   "ran": {
+    "raw": [
+     [
+      "runs",
+      0.78
+     ],
+     [
+      "run",
+      0.71
+     ],
+     [
+      "running",
+      0.61
+     ],
+     [
+      "rushed",
+      0.51
+     ],
+     [
+      "hurried",
+      0.42
+     ],
+     [
+      "raced",
+      0.41
+     ]
+    ],
+    "centered": [
+     [
+      "runs",
+      0.76
+     ],
+     [
+      "run",
+      0.72
+     ],
+     [
+      "running",
+      0.6
+     ],
+     [
+      "went",
+      0.46
+     ],
+     [
+      "rushed",
+      0.44
+     ],
+     [
+      "walked",
+      0.41
+     ]
+    ],
+    "centered_top_pc_removed": [
+     [
+      "runs",
+      0.72
+     ],
+     [
+      "run",
+      0.68
+     ],
+     [
+      "running",
+      0.54
+     ],
+     [
+      "went",
+      0.37
+     ],
+     [
+      "rushed",
+      0.35
+     ],
+     [
+      "walked",
+      0.33
+     ]
+    ]
+   },
+   "happy": {
+    "raw": [
+     [
+      "happier",
+      0.4
+     ],
+     [
+      "happily",
+      0.39
+     ],
+     [
+      "glad",
+      0.39
+     ],
+     [
+      "happiness",
+      0.37
+     ],
+     [
+      "proud",
+      0.33
+     ],
+     [
+      "excited",
+      0.33
+     ]
+    ],
+    "centered": [
+     [
+      "very",
+      0.46
+     ],
+     [
+      "glad",
+      0.45
+     ],
+     [
+      "the",
+      0.44
+     ],
+     [
+      "sad",
+      0.43
+     ],
+     [
+      "excited",
+      0.43
+     ],
+     [
+      "happily",
+      0.43
+     ]
+    ],
+    "centered_top_pc_removed": [
+     [
+      "very",
+      0.38
+     ],
+     [
+      "glad",
+      0.37
+     ],
+     [
+      "sad",
+      0.37
+     ],
+     [
+      "happily",
+      0.35
+     ],
+     [
+      "excited",
+      0.35
+     ],
+     [
+      "the",
+      0.35
+     ]
+    ]
+   },
+   "red": {
+    "raw": [
+     [
+      "green",
+      0.4
+     ],
+     [
+      "yellow",
+      0.39
+     ],
+     [
+      "blue",
+      0.39
+     ],
+     [
+      "pink",
+      0.36
+     ],
+     [
+      "brown",
+      0.32
+     ],
+     [
+      "black",
+      0.31
+     ]
+    ],
+    "centered": [
+     [
+      "green",
+      0.53
+     ],
+     [
+      "blue",
+      0.52
+     ],
+     [
+      "yellow",
+      0.51
+     ],
+     [
+      ",",
+      0.46
+     ],
+     [
+      "pink",
+      0.45
+     ],
+     [
+      "big",
+      0.43
+     ]
+    ],
+    "centered_top_pc_removed": [
+     [
+      "green",
+      0.47
+     ],
+     [
+      "blue",
+      0.46
+     ],
+     [
+      "yellow",
+      0.45
+     ],
+     [
+      "pink",
+      0.39
+     ],
+     [
+      ",",
+      0.38
+     ],
+     [
+      "big",
+      0.37
+     ]
+    ]
+   }
+  },
+  "C_rare_tokens": {
+   "tokens_never_seen_in_validation": 1066,
+   "median_input_norm_seen": 0.94,
+   "median_input_norm_unseen": 0.17,
+   "corr_log_freq_vs_input_norm": 0.915,
+   "lowest_input_norm_tokens": [
+    [
+     "fortunately",
+     0.03,
+     0
+    ],
+    [
+     "�",
+     0.03,
+     0
+    ],
+    [
+     " arg",
+     0.03,
+     0
+    ],
+    [
+     "�",
+     0.03,
+     0
+    ],
+    [
+     "�",
+     0.03,
+     0
+    ],
+    [
+     " microw",
+     0.03,
+     0
+    ],
+    [
+     " swo",
+     0.03,
+     0
+    ],
+    [
+     "�",
+     0.03,
+     0
+    ],
+    [
+     " neighb",
+     0.03,
+     0
+    ],
+    [
+     " thu",
+     0.03,
+     0
+    ],
+    [
+     "\u0003",
+     0.03,
+     0
+    ],
+    [
+     "igail",
+     0.03,
+     0
+    ]
+   ],
+   "highest_input_norm_tokens": [
+    [
+     " even",
+     1.69,
+     2578
+    ],
+    [
+     "!",
+     1.68,
+     18729
+    ],
+    [
+     " all",
+     1.68,
+     17030
+    ],
+    [
+     " out",
+     1.66,
+     7128
+    ],
+    [
+     " pretty",
+     1.64,
+     3800
+    ],
+    [
+     " and",
+     1.62,
+     196057
+    ],
+    [
+     " as",
+     1.62,
+     4277
+    ],
+    [
+     " not",
+     1.61,
+     27021
+    ]
+   ]
+  },
+  "D_analogies": {
+   "input": {
+    "n": 18,
+    "top1": 12,
+    "top5": 15,
+    "rows": [
+     "man:woman :: king:? -> ueen, King, queen, kings, Queen",
+     "boy:girl :: brother:? -> sister, niece, daughter, friend, granddaughter  ✓",
+     "he:she :: his:? -> her, your, my, its, their  ✓",
+     "dad:mom :: son:? -> daughter, brother, sweetie, niece, sweetheart  ✓",
+     "boy:girl :: prince:? -> princess, Prince, Princess, fairy, king  ✓",
+     "man:woman :: father:? -> mother, Mother, parent, Mother, parents  ✓",
+     "dog:dogs :: cat:? -> cats, Cat, Cat, mice, kitty  ✓",
+     "tree:trees :: bird:? -> Bird, birds, Birds, Bird, Chirpy",
+     "toy:toys :: car:? -> truck, Toys, bird, doll, blocks",
+     "walk:walked :: jump:? -> jumped, jumping, hopped, aped, waddled  ✓",
+     "play:played :: look:? -> looked, looks, looking, anced, Look  ✓",
+     "run:ran :: eat:? -> ate, eating, Eat, Eat, eats  ✓",
+     "big:bigger :: small:? -> smaller, larger, taller, short, etter  ✓",
+     "fast:faster :: slow:? -> slower, Slow, Slow, slowed, exhausted  ✓",
+     "happy:sad :: good:? -> great, bad, best, wonderful, ighing",
+     "one:two :: three:? -> Two, 3, Two, 5, 8",
+     "day:night :: morning:? -> evening, winter, breakfast, wake, bedtime  ✓",
+     "hot:cold :: up:? -> left, fit, squirrel, leave, feel"
+    ]
+   },
+   "output": {
+    "n": 18,
+    "top1": 13,
+    "top5": 15,
+    "rows": [
+     "man:woman :: king:? -> Curious, Since, li, izz, cracks",
+     "boy:girl :: brother:? -> sister, siblings, princess, She, girls  ✓",
+     "he:she :: his:? -> her, She, Her, She, hers  ✓",
+     "dad:mom :: son:? -> mother, mommy, Mommy, Mommy, Mom",
+     "boy:girl :: prince:? -> princess, Betty, sk, queen, Queen  ✓",
+     "man:woman :: father:? -> hiss, uel, lamb, li, Sadly",
+     "dog:dogs :: cat:? -> cats, Cat, Adam, peck, Bl  ✓",
+     "tree:trees :: bird:? -> birds, Bird, wings, birdcage, angels  ✓",
+     "toy:toys :: car:? -> cars, truck, boat, shallow, men  ✓",
+     "walk:walked :: jump:? -> jumped, jumps, jumping, hopped, bounced  ✓",
+     "play:played :: look:? -> looked, looks, Look, looking, seem  ✓",
+     "run:ran :: eat:? -> ate, eats, eating, eaten, hungry  ✓",
+     "big:bigger :: small:? -> smaller, tiny, Fl, Am, int  ✓",
+     "fast:faster :: slow:? -> slower, designs, Up, slowed, itter  ✓",
+     "happy:sad :: good:? -> bad, great, goodnight, cheek, performing  ✓",
+     "one:two :: three:? -> 3, four, Two, boys, twice",
+     "day:night :: morning:? -> darkness, evening, Without, urn, the",
+     "hot:cold :: up:? -> down, -, napkin, shiver, higher  ✓"
+    ]
+   },
+   "output, centered + top PC removed": {
+    "n": 18,
+    "top1": 15,
+    "top5": 18,
+    "rows": [
+     "man:woman :: king:? -> princess, queen, Bobo, photo, King",
+     "boy:girl :: brother:? -> sister, siblings, princess, friend, She  ✓",
+     "he:she :: his:? -> her, She, the, Her, their  ✓",
+     "dad:mom :: son:? -> mother, mommy, daughter, Mom, Mommy",
+     "boy:girl :: prince:? -> princess, queen, fairy, Fred, She  ✓",
+     "man:woman :: father:? -> mother, grandmother, Jenny, cracked, Mimi  ✓",
+     "dog:dogs :: cat:? -> cats, Cat, animals, Kitty, kids  ✓",
+     "tree:trees :: bird:? -> birds, animals, flowers, fish, rocks  ✓",
+     "toy:toys :: car:? -> cars, truck, boat, things, animals  ✓",
+     "walk:walked :: jump:? -> jumped, jumping, jumps, ran, hopped  ✓",
+     "play:played :: look:? -> looked, looks, looking, Look, went  ✓",
+     "run:ran :: eat:? -> ate, eating, eats, hungry, food  ✓",
+     "big:bigger :: small:? -> smaller, tiny, taller, better, different  ✓",
+     "fast:faster :: slow:? -> slower, stops, higher, stronger, slowly  ✓",
+     "happy:sad :: good:? -> bad, great, nice, kind, best  ✓",
+     "one:two :: three:? -> 3, four, boys, Two, five",
+     "day:night :: morning:? -> evening, darkness, slept, stars, bed  ✓",
+     "hot:cold :: up:? -> down, out, in, back, to  ✓"
+    ]
+   }
+  }
+ },
+ "OpenWebText 45M": {
+  "vocab": 32000,
+  "validation_chars": 287354132,
+  "validation_tokens": 66401429,
+  "A_words_used": 68,
+  "A_silhouette": 0.152,
+  "A_silhouette_shuffled_groups": -0.033,
+  "B_anisotropy": {
+   "input": {
+    "mean_cos": 0.016,
+    "std_cos": 0.058
+   },
+   "output": {
+    "mean_cos": 0.849,
+    "std_cos": 0.126
+   },
+   "output, centered": {
+    "mean_cos": 0.01,
+    "std_cos": 0.365
+   },
+   "output, centered + top PC removed": {
+    "mean_cos": 0.0,
+    "std_cos": 0.085
+   },
+   "output_mean_vector_norm_vs_avg_token_norm": 0.933,
+   "output_cos_to_mean_rare_tokens(<5)": 0.959,
+   "output_cos_to_mean_common_tokens(>=1000)": 0.79,
+   "n_rare_tokens(<5)": 181,
+   "n_common_tokens(>=1000)": 6960,
+   "centered_output_variance_share_top3_PCs": [
+    0.418,
+    0.024,
+    0.006
+   ],
+   "corr_PC1_projection_vs_log_freq": 0.855
+  },
+  "B_output_neighbors": {
+   "dog": {
+    "raw": [
+     [
+      "dogs",
+      0.88
+     ],
+     [
+      "Pam",
+      0.83
+     ],
+     [
+      "Julie",
+      0.83
+     ],
+     [
+      "Caroline",
+      0.83
+     ],
+     [
+      "Rebecca",
+      0.83
+     ],
+     [
+      "Elliott",
+      0.82
+     ]
+    ],
+    "centered": [
+     [
+      "dogs",
+      0.71
+     ],
+     [
+      ",",
+      0.69
+     ],
+     [
+      ".",
+      0.68
+     ],
+     [
+      "and",
+      0.68
+     ],
+     [
+      "Someone",
+      0.68
+     ],
+     [
+      "st",
+      0.67
+     ]
+    ],
+    "centered_top_pc_removed": [
+     [
+      "dogs",
+      0.54
+     ],
+     [
+      "cat",
+      0.3
+     ],
+     [
+      "pet",
+      0.3
+     ],
+     [
+      "animal",
+      0.29
+     ],
+     [
+      "pets",
+      0.26
+     ],
+     [
+      "Dog",
+      0.23
+     ]
+    ]
+   },
+   "tree": {
+    "raw": [
+     [
+      "trees",
+      0.88
+     ],
+     [
+      "Tree",
+      0.86
+     ],
+     [
+      "Hannah",
+      0.85
+     ],
+     [
+      "Jess",
+      0.84
+     ],
+     [
+      "Harold",
+      0.84
+     ],
+     [
+      "Gavin",
+      0.84
+     ]
+    ],
+    "centered": [
+     [
+      "trees",
+      0.7
+     ],
+     [
+      "Tree",
+      0.6
+     ],
+     [
+      "Few",
+      0.59
+     ],
+     [
+      "s",
+      0.59
+     ],
+     [
+      "k",
+      0.58
+     ],
+     [
+      "and",
+      0.58
+     ]
+    ],
+    "centered_top_pc_removed": [
+     [
+      "trees",
+      0.53
+     ],
+     [
+      "Tree",
+      0.36
+     ],
+     [
+      "branch",
+      0.25
+     ],
+     [
+      "ladder",
+      0.22
+     ],
+     [
+      "mountain",
+      0.21
+     ],
+     [
+      "branches",
+      0.21
+     ]
+    ]
+   },
+   "mom": {
+    "raw": [
+     [
+      "dad",
+      0.92
+     ],
+     [
+      "grandmother",
+      0.91
+     ],
+     [
+      "Cind",
+      0.91
+     ],
+     [
+      "mum",
+      0.91
+     ],
+     [
+      "Primary",
+      0.91
+     ],
+     [
+      "Sed",
+      0.91
+     ]
+    ],
+    "centered": [
+     [
+      "dad",
+      0.55
+     ],
+     [
+      "mother",
+      0.55
+     ],
+     [
+      "Mom",
+      0.45
+     ],
+     [
+      "parents",
+      0.43
+     ],
+     [
+      "father",
+      0.41
+     ],
+     [
+      "her",
+      0.41
+     ]
+    ],
+    "centered_top_pc_removed": [
+     [
+      "dad",
+      0.48
+     ],
+     [
+      "mother",
+      0.41
+     ],
+     [
+      "grandmother",
+      0.34
+     ],
+     [
+      "mum",
+      0.29
+     ],
+     [
+      "grandparents",
+      0.26
+     ],
+     [
+      "Mom",
+      0.26
+     ]
+    ]
+   },
+   "ran": {
+    "raw": [
+     [
+      "drew",
+      0.83
+     ],
+     [
+      "threw",
+      0.83
+     ],
+     [
+      "drove",
+      0.82
+     ],
+     [
+      "garnered",
+      0.82
+     ],
+     [
+      "spun",
+      0.82
+     ],
+     [
+      "rode",
+      0.82
+     ]
+    ],
+    "centered": [
+     [
+      "went",
+      0.8
+     ],
+     [
+      "was",
+      0.8
+     ],
+     [
+      "gave",
+      0.79
+     ],
+     [
+      "took",
+      0.79
+     ],
+     [
+      "had",
+      0.79
+     ],
+     [
+      "came",
+      0.78
+     ]
+    ],
+    "centered_top_pc_removed": [
+     [
+      "went",
+      0.45
+     ],
+     [
+      "gave",
+      0.45
+     ],
+     [
+      "took",
+      0.43
+     ],
+     [
+      "came",
+      0.4
+     ],
+     [
+      "was",
+      0.38
+     ],
+     [
+      "became",
+      0.38
+     ]
+    ]
+   },
+   "happy": {
+    "raw": [
+     [
+      "enthusiastic",
+      0.79
+     ],
+     [
+      "satisfied",
+      0.79
+     ],
+     [
+      "unhappy",
+      0.79
+     ],
+     [
+      "pleased",
+      0.78
+     ],
+     [
+      "thrilled",
+      0.78
+     ],
+     [
+      "Yam",
+      0.78
+     ]
+    ],
+    "centered": [
+     [
+      ",",
+      0.76
+     ],
+     [
+      "in",
+      0.76
+     ],
+     [
+      ".",
+      0.75
+     ],
+     [
+      "(",
+      0.75
+     ],
+     [
+      "3",
+      0.75
+     ],
+     [
+      "at",
+      0.75
+     ]
+    ],
+    "centered_top_pc_removed": [
+     [
+      "proud",
+      0.35
+     ],
+     [
+      "pleased",
+      0.35
+     ],
+     [
+      "willing",
+      0.35
+     ],
+     [
+      "satisfied",
+      0.32
+     ],
+     [
+      "thrilled",
+      0.29
+     ],
+     [
+      "comfortable",
+      0.28
+     ]
+    ]
+   },
+   "red": {
+    "raw": [
+     [
+      "green",
+      0.76
+     ],
+     [
+      "blue",
+      0.76
+     ],
+     [
+      "yellow",
+      0.74
+     ],
+     [
+      "orange",
+      0.73
+     ],
+     [
+      "pink",
+      0.73
+     ],
+     [
+      "purple",
+      0.72
+     ]
+    ],
+    "centered": [
+     [
+      ",",
+      0.81
+     ],
+     [
+      "re",
+      0.8
+     ],
+     [
+      "in",
+      0.8
+     ],
+     [
+      "and",
+      0.79
+     ],
+     [
+      "d",
+      0.79
+     ],
+     [
+      "b",
+      0.79
+     ]
+    ],
+    "centered_top_pc_removed": [
+     [
+      "green",
+      0.43
+     ],
+     [
+      "blue",
+      0.41
+     ],
+     [
+      "re",
+      0.34
+     ],
+     [
+      "black",
+      0.33
+     ],
+     [
+      "white",
+      0.32
+     ],
+     [
+      "yellow",
+      0.3
+     ]
+    ]
+   }
+  },
+  "C_rare_tokens": {
+   "tokens_never_seen_in_validation": 89,
+   "median_input_norm_seen": 1.02,
+   "median_input_norm_unseen": 0.03,
+   "corr_log_freq_vs_input_norm": 0.924,
+   "lowest_input_norm_tokens": [
+    [
+     "�",
+     0.03,
+     0
+    ],
+    [
+     " unsuccess",
+     0.03,
+     0
+    ],
+    [
+     "�",
+     0.03,
+     0
+    ],
+    [
+     " newslet",
+     0.03,
+     0
+    ],
+    [
+     "\u0003",
+     0.03,
+     0
+    ],
+    [
+     "\u0005",
+     0.03,
+     0
+    ],
+    [
+     "\r",
+     0.03,
+     0
+    ],
+    [
+     "�",
+     0.03,
+     0
+    ],
+    [
+     "\u0015",
+     0.03,
+     0
+    ],
+    [
+     "�",
+     0.03,
+     0
+    ],
+    [
+     "�",
+     0.03,
+     0
+    ],
+    [
+     "�",
+     0.03,
+     0
+    ]
+   ],
+   "highest_input_norm_tokens": [
+    [
+     "'s",
+     1.55,
+     197629
+    ],
+    [
+     " more",
+     1.53,
+     117874
+    ],
+    [
+     " has",
+     1.53,
+     160987
+    ],
+    [
+     " that",
+     1.53,
+     563364
+    ],
+    [
+     "’",
+     1.53,
+     489062
+    ],
+    [
+     " is",
+     1.52,
+     491080
+    ],
+    [
+     " not",
+     1.52,
+     179393
+    ],
+    [
+     " all",
+     1.52,
+     106566
+    ]
+   ]
+  },
+  "D_analogies": {
+   "input": {
+    "n": 18,
+    "top1": 11,
+    "top5": 13,
+    "rows": [
+     "man:woman :: king:? -> emperor, throne, King, prince, girl",
+     "boy:girl :: brother:? -> sister, boyfriend, neighbour, mother, widow  ✓",
+     "he:she :: his:? -> her, His, His, his, my  ✓",
+     "dad:mom :: son:? -> mothers, nurse, sister, grandmother, inauguration",
+     "boy:girl :: prince:? -> royal, king, Queen, Tillerson, romance",
+     "man:woman :: father:? -> mother, grandmother, child, girl, grandfather  ✓",
+     "dog:dogs :: cat:? -> cats, pets, chickens, animals, keys  ✓",
+     "tree:trees :: bird:? -> flowers, rocks, tourists, sheep, roads",
+     "toy:toys :: car:? -> SUV, vehicles, phones, cigarettes, buses",
+     "walk:walked :: jump:? -> jumped, jumping, stepped, leaned, climbed  ✓",
+     "play:played :: look:? -> looks, looked, Look, looking, Look",
+     "run:ran :: eat:? -> ate, eats, eating, eaten, consume  ✓",
+     "big:bigger :: small:? -> larger, smaller, tiny, Small, small",
+     "fast:faster :: slow:? -> slower, slows, slowing, quicker, slowed  ✓",
+     "happy:sad :: good:? -> bad, peculiar, tragic, ugly, sensational  ✓",
+     "one:two :: three:? -> four, Two, Two, Three, Three  ✓",
+     "day:night :: morning:? -> evening, afternoon, weekend, Saturday, Sunday  ✓",
+     "hot:cold :: up:? -> down, home, drop, working, away  ✓"
+    ]
+   },
+   "output": {
+    "n": 18,
+    "top1": 13,
+    "top5": 18,
+    "rows": [
+     "man:woman :: king:? -> queen, princess, monarch, embodied, extraordinarily  ✓",
+     "boy:girl :: brother:? -> sister, cousin, Nicole, Lots, Heather  ✓",
+     "he:she :: his:? -> her, Her, herself, She, She  ✓",
+     "dad:mom :: son:? -> daughter, sons, Pretty, Derek, Knowing  ✓",
+     "boy:girl :: prince:? -> Twilight, Kat, goddess, Natalie, princess",
+     "man:woman :: father:? -> mother, grandmother, maternal, nicknamed, Claire  ✓",
+     "dog:dogs :: cat:? -> cats, Bath, Extra, Aside, Uganda  ✓",
+     "tree:trees :: bird:? -> birds, Leslie, Cind, Reason, Turns  ✓",
+     "toy:toys :: car:? -> cars, vehicle, vehicles, Timothy, Besides  ✓",
+     "walk:walked :: jump:? -> jumped, flipped, objected, tore, mocked  ✓",
+     "play:played :: look:? -> looked, compare, averaged, Bright, listen  ✓",
+     "run:ran :: eat:? -> ate, impress, Hunting, mocked, drank  ✓",
+     "big:bigger :: small:? -> larger, smaller, tiny, modest, Mic",
+     "fast:faster :: slow:? -> quicker, slower, slowing, dull, Denis",
+     "happy:sad :: good:? -> bad, great, Good, nice, shame  ✓",
+     "one:two :: three:? -> four, five, six, seven, eight  ✓",
+     "day:night :: morning:? -> afternoon, evening, nights, mornings, autumn",
+     "hot:cold :: up:? -> Up, down, off, up, away"
+    ]
+   },
+   "output, centered + top PC removed": {
+    "n": 18,
+    "top1": 15,
+    "top5": 18,
+    "rows": [
+     "man:woman :: king:? -> queen, ruler, princess, monarch, crown  ✓",
+     "boy:girl :: brother:? -> sister, daughter, cousin, woman, her  ✓",
+     "he:she :: his:? -> her, She, Her, herself, She  ✓",
+     "dad:mom :: son:? -> daughter, child, sons, mother, baby  ✓",
+     "boy:girl :: prince:? -> princess, jew, Twilight, royal, goddess  ✓",
+     "man:woman :: father:? -> mother, parents, husband, wife, girl  ✓",
+     "dog:dogs :: cat:? -> cats, Cat, animals, patients, correl  ✓",
+     "tree:trees :: bird:? -> birds, parks, wood, animals, buildings  ✓",
+     "toy:toys :: car:? -> cars, vehicle, vehicles, driving, work  ✓",
+     "walk:walked :: jump:? -> jumped, stepped, stood, wondered, grabbed  ✓",
+     "play:played :: look:? -> looked, compare, looks, tried, fought  ✓",
+     "run:ran :: eat:? -> ate, went, took, gave, became  ✓",
+     "big:bigger :: small:? -> larger, smaller, tiny, greater, stronger",
+     "fast:faster :: slow:? -> slower, quicker, slowing, easier, cheaper  ✓",
+     "happy:sad :: good:? -> bad, great, big, Good, research  ✓",
+     "one:two :: three:? -> four, five, six, seven, eight  ✓",
+     "day:night :: morning:? -> afternoon, evening, mornings, Night, nights",
+     "hot:cold :: up:? -> Up, off, down, away, out"
+    ]
+   }
+  }
+ }
+}
