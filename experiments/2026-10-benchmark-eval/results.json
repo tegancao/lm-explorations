@@ -1,0 +1,203 @@
+{
+ "tinystories-22m": {
+  "model": "tegancao/tinystories-22m",
+  "max_length": 512,
+  "results": {
+   "hellaswag": {
+    "name": "hellaswag",
+    "alias": "hellaswag",
+    "sample_len": 10042,
+    "acc,none": 0.25960963951404104,
+    "acc_stderr,none": 0.004375244237044889,
+    "acc_norm,none": 0.26528579964150567,
+    "acc_norm_stderr,none": 0.0044058299932585145
+   },
+   "lambada_openai": {
+    "name": "lambada_openai",
+    "alias": "lambada_openai",
+    "sample_len": 5153,
+    "perplexity,none": 70408.24765731215,
+    "perplexity_stderr,none": 7143.841988982757,
+    "acc,none": 0.10013584319813701,
+    "acc_stderr,none": 0.004182108819949255
+   },
+   "piqa": {
+    "name": "piqa",
+    "alias": "piqa",
+    "sample_len": 1838,
+    "acc,none": 0.5375408052230686,
+    "acc_stderr,none": 0.011632896120570703,
+    "acc_norm,none": 0.5163220892274211,
+    "acc_norm_stderr,none": 0.011659606710151597
+   },
+   "arc_easy": {
+    "name": "arc_easy",
+    "alias": "arc_easy",
+    "sample_len": 2376,
+    "acc,none": 0.27104377104377103,
+    "acc_stderr,none": 0.009120919741760646,
+    "acc_norm,none": 0.25252525252525254,
+    "acc_norm_stderr,none": 0.008914948991495836
+   }
+  },
+  "n_samples": {
+   "hellaswag": {
+    "original": 10042,
+    "effective": 10042
+   },
+   "lambada_openai": {
+    "original": 5153,
+    "effective": 5153
+   },
+   "piqa": {
+    "original": 1838,
+    "effective": 1838
+   },
+   "arc_easy": {
+    "original": 2376,
+    "effective": 2376
+   }
+  },
+  "versions": {
+   "arc_easy": "1.0",
+   "hellaswag": "1.0",
+   "lambada_openai": "1.0",
+   "piqa": "1.0"
+  },
+  "lm_eval_version": "0.4.13"
+ },
+ "owt-45m": {
+  "model": "tegancao/owt-45m",
+  "max_length": 256,
+  "results": {
+   "hellaswag": {
+    "name": "hellaswag",
+    "alias": "hellaswag",
+    "sample_len": 10042,
+    "acc,none": 0.2642899820752838,
+    "acc_stderr,none": 0.0044005321885504795,
+    "acc_norm,none": 0.26628161720772753,
+    "acc_norm_stderr,none": 0.004411099046250669
+   },
+   "lambada_openai": {
+    "name": "lambada_openai",
+    "alias": "lambada_openai",
+    "sample_len": 5153,
+    "perplexity,none": 3694.5491137577387,
+    "perplexity_stderr,none": 181.95180109058714,
+    "acc,none": 0.0613235008732777,
+    "acc_stderr,none": 0.0033425931232562984
+   },
+   "piqa": {
+    "name": "piqa",
+    "alias": "piqa",
+    "sample_len": 1838,
+    "acc,none": 0.55930359085963,
+    "acc_stderr,none": 0.011583478090656981,
+    "acc_norm,none": 0.529923830250272,
+    "acc_norm_stderr,none": 0.011644913435420134
+   },
+   "arc_easy": {
+    "name": "arc_easy",
+    "alias": "arc_easy",
+    "sample_len": 2376,
+    "acc,none": 0.31734006734006737,
+    "acc_stderr,none": 0.009550648343947928,
+    "acc_norm,none": 0.30723905723905726,
+    "acc_norm_stderr,none": 0.009466688832475192
+   }
+  },
+  "n_samples": {
+   "hellaswag": {
+    "original": 10042,
+    "effective": 10042
+   },
+   "lambada_openai": {
+    "original": 5153,
+    "effective": 5153
+   },
+   "piqa": {
+    "original": 1838,
+    "effective": 1838
+   },
+   "arc_easy": {
+    "original": 2376,
+    "effective": 2376
+   }
+  },
+  "versions": {
+   "arc_easy": "1.0",
+   "hellaswag": "1.0",
+   "lambada_openai": "1.0",
+   "piqa": "1.0"
+  },
+  "lm_eval_version": "0.4.13"
+ },
+ "gpt2-small": {
+  "model": "openai-community/gpt2",
+  "max_length": 1024,
+  "results": {
+   "hellaswag": {
+    "name": "hellaswag",
+    "alias": "hellaswag",
+    "sample_len": 10042,
+    "acc,none": 0.2891854212308305,
+    "acc_stderr,none": 0.004524575892953094,
+    "acc_norm,none": 0.31139215295757816,
+    "acc_norm_stderr,none": 0.004621163476949437
+   },
+   "lambada_openai": {
+    "name": "lambada_openai",
+    "alias": "lambada_openai",
+    "sample_len": 5153,
+    "perplexity,none": 40.05541627873884,
+    "perplexity_stderr,none": 1.4787255303102396,
+    "acc,none": 0.32563555210556955,
+    "acc_stderr,none": 0.00652867895783563
+   },
+   "piqa": {
+    "name": "piqa",
+    "alias": "piqa",
+    "sample_len": 1838,
+    "acc,none": 0.6289445048966268,
+    "acc_stderr,none": 0.011271222398600666,
+    "acc_norm,none": 0.6251360174102285,
+    "acc_norm_stderr,none": 0.01129456580561892
+   },
+   "arc_easy": {
+    "name": "arc_easy",
+    "alias": "arc_easy",
+    "sample_len": 2376,
+    "acc,none": 0.43813131313131315,
+    "acc_stderr,none": 0.010180937100600149,
+    "acc_norm,none": 0.3947811447811448,
+    "acc_norm_stderr,none": 0.01003003893588357
+   }
+  },
+  "n_samples": {
+   "hellaswag": {
+    "original": 10042,
+    "effective": 10042
+   },
+   "lambada_openai": {
+    "original": 5153,
+    "effective": 5153
+   },
+   "piqa": {
+    "original": 1838,
+    "effective": 1838
+   },
+   "arc_easy": {
+    "original": 2376,
+    "effective": 2376
+   }
+  },
+  "versions": {
+   "arc_easy": "1.0",
+   "hellaswag": "1.0",
+   "lambada_openai": "1.0",
+   "piqa": "1.0"
+  },
+  "lm_eval_version": "0.4.13"
+ }
+}
