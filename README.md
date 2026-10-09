@@ -8,14 +8,32 @@ including what goes wrong. You'll find two small models you can chat with (and s
 can't do), compact notes on why training large models is hard, practical lessons from training on a laptop and a
 cheap rented GPU, and reflections on what building it all myself taught me.
 
-## Setup
+## Run the chatbot
 
-With [uv](https://docs.astral.sh/uv/) (installs Python 3.12 and the pinned dependencies from `uv.lock`):
+Chat with the two small models from your terminal; they download from Hugging Face automatically.
+
+**You need:**
+- [uv](https://docs.astral.sh/uv/getting-started/installation/), a one-line install. uv installs Python 3.12 and the
+  exact dependency versions from `uv.lock` for you, so you don't need Python set up already.
+- No GPU: it runs on a normal laptop CPU, at about 1–2 seconds per reply.
+- No Hugging Face account: the models are public.
+- On the first run, a few minutes and some disk space: PyTorch (several hundred MB to ~1 GB, depending on your
+  platform) and the two models (91 MB and 181 MB). Later runs start in seconds.
+
+**Then:**
 
 ```
-uv sync
-uv run demos/tiny-chat/chat.py        # chat with the TinyStories model
+git clone https://github.com/tegancao/lm-explorations.git
+cd lm-explorations
+uv run demos/tiny-chat/chat.py                 # TinyStories model
+uv run demos/tiny-chat/chat.py --model owt     # OpenWebText model
 ```
+
+Type a story opening (for the TinyStories model) or a news-style opening (for the OpenWebText model) at the
+`prompt>` line; `/help` lists the commands. See [demos/tiny-chat](demos/tiny-chat) for example sessions and what to
+expect. Tested on macOS (Apple Silicon); Linux and Windows should work the same, since it's standard PyTorch and
+Hugging Face `transformers` on CPU. Without uv: `pip install -r demos/tiny-chat/requirements.txt`, then
+`python demos/tiny-chat/chat.py`.
 
 ## Contents
 
