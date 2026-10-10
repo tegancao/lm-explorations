@@ -6,6 +6,14 @@ sizes: the original TinyStories models (Eldan & Li), EleutherAI's Pythia suite a
 full test sets, run with EleutherAI's [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness)
 (v0.4.13).
 
+> **TL;DR**
+> - Small models learn **grammar before knowledge**: my 45M OpenWebText model matches Pythia-70M on the BLiMP grammar
+>   test (73.8% vs. 73.3%) while staying near chance on reasoning benchmarks.
+> - **The training data sets the ceiling**: TinyStories models are equally near chance on general benchmarks across a
+>   70× range of sizes.
+> - Compare models by **Transformer body size** and **bits per byte**, not total parameters or perplexity.
+> - **Look inside benchmarks**: LAMBADA is mostly copying; a below-chance score can be a surface preference.
+
 ![Benchmarks vs. model size](scaling.png)
 
 The x-axis is the size of each model's **Transformer body** (all parameters except the embedding and output layers),
@@ -165,6 +173,9 @@ For its size my OpenWebText model saw few tokens: 7 per parameter, against the ~
 - **Data overlap.** Pythia's training data includes Wikipedia, so its WikiText numbers partly reflect having seen that
   kind of text (possibly the same articles).
 - **Zero-shot** (no worked examples in the prompt). All scoring is by log-likelihood, so results are deterministic.
+- **One training run per model.** My models were each trained once, with one random seed, so differences of a point or
+  two between similar models (e.g. my TinyStories model vs. TinyStories-8M) may partly be run-to-run variation; the
+  standard errors only cover the finite benchmark size, not training randomness.
 - Run on Modal: one NVIDIA L4 per model, up to 8 at a time, about 30 minutes in total and a few dollars. On a laptop
   CPU this would take many hours.
 

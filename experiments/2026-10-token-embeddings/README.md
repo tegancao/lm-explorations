@@ -1,5 +1,13 @@
 # What do my small models' token embeddings look like? (October 2026)
 
+> **TL;DR**
+> - Even 22–45M-parameter models learn real word structure: names, colors, numbers and animals cluster, and analogies like
+>   *king − man + woman ≈ queen* work (15 of 18 in the best space).
+> - The **output embeddings** all point in nearly the same direction (average similarity up to 0.85), because training
+>   only ever pushes rare tokens away; removing that direction and a **frequency** direction reveals the structure.
+> - Tokens the model never saw keep shrinking under weight decay alone: a one-line calculation predicts their size
+>   (0.031) almost exactly (0.028).
+
 Four experiments on the token embeddings of my two models trained from scratch:
 [`tegancao/tinystories-22m`](https://huggingface.co/tegancao/tinystories-22m) (10K-token vocabulary) and
 [`tegancao/owt-45m`](https://huggingface.co/tegancao/owt-45m) (32K). Each model has two embedding matrices, because

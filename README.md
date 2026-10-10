@@ -8,6 +8,18 @@ including what goes wrong. You'll find two small models you can chat with (and s
 can't do), compact notes on why training large models is hard, practical lessons from training on a laptop and a
 cheap rented GPU, and reflections on what building it all myself taught me.
 
+## Key findings so far
+
+- **Small models learn grammar before knowledge.** My 45M-parameter OpenWebText model matches Pythia-70M (trained on
+  ~1,000× more tokens) on a grammar benchmark, yet stays near chance on reasoning benchmarks.
+  [→ benchmark evaluation](experiments/2026-10-benchmark-eval)
+- **Training data sets the ceiling.** Models trained only on children's stories don't improve on general benchmarks no
+  matter their size. [→ benchmark evaluation](experiments/2026-10-benchmark-eval)
+- **Even tiny models learn word meaning,** but their output embeddings hide it behind a shared direction and a frequency
+  direction. [→ token embeddings](experiments/2026-10-token-embeddings)
+- **Base models continue text, they don't answer it,** and they invent convincing nonsense.
+  [→ tiny-chat demo](demos/tiny-chat)
+
 ## Run the chatbot
 
 Chat with the two small models from your terminal; they download from Hugging Face automatically.
