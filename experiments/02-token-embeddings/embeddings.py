@@ -1,6 +1,6 @@
 """Token-embedding experiments on two small models trained from scratch.
 
-    uv run experiments/2026-10-token-embeddings/embeddings.py
+    uv run experiments/02-token-embeddings/embeddings.py
 
 Models: tegancao/tinystories-22m and tegancao/owt-45m (Hugging Face). Token frequencies are counted on each
 dataset's public validation split. Writes figures and results.json next to this script.

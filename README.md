@@ -12,11 +12,11 @@ cheap rented GPU, and reflections on what building it all myself taught me.
 
 - **Small models learn grammar before knowledge.** My 45M-parameter OpenWebText model matches Pythia-70M (trained on
   ~1,000× more tokens) on a grammar benchmark, yet stays near chance on reasoning benchmarks.
-  [→ benchmark evaluation](experiments/2026-10-benchmark-eval)
+  [→ benchmark evaluation](experiments/03-benchmark-eval)
 - **Training data sets the ceiling.** Models trained only on children's stories don't improve on general benchmarks no
-  matter their size. [→ benchmark evaluation](experiments/2026-10-benchmark-eval)
+  matter their size. [→ benchmark evaluation](experiments/03-benchmark-eval)
 - **Even tiny models learn word meaning,** but their output embeddings hide it behind a shared direction and a frequency
-  direction. [→ token embeddings](experiments/2026-10-token-embeddings)
+  direction. [→ token embeddings](experiments/02-token-embeddings)
 - **Base models continue text, they don't answer it,** and they invent convincing nonsense.
   [→ tiny-chat demo](demos/tiny-chat)
 
@@ -52,9 +52,9 @@ Hugging Face `transformers` on CPU. Without uv: `pip install -r demos/tiny-chat/
 | | |
 |---|---|
 | [**demos/tiny-chat**](demos/tiny-chat) | Chat with two small models I trained from scratch; real sessions with commentary on what they can and can't do |
-| [**experiments/2026-10-small-lms-from-scratch**](experiments/2026-10-small-lms-from-scratch) | Building my first language models: what it taught me, setup and results |
-| [**experiments/2026-10-token-embeddings**](experiments/2026-10-token-embeddings) | What the models' token embeddings learned: word clusters, why output embeddings all look alike, tokens the model never learned, analogies |
-| [**experiments/2026-10-benchmark-eval**](experiments/2026-10-benchmark-eval) | My models among 9 reference models (TinyStories, Pythia, GPT-2) on 8 benchmarks, incl. grammar and bits per byte (lm-evaluation-harness, on Modal GPUs) |
+| [**experiments/01-small-lms-from-scratch**](experiments/01-small-lms-from-scratch) | Building my first language models: what it taught me, setup and results |
+| [**experiments/02-token-embeddings**](experiments/02-token-embeddings) | What the models' token embeddings learned: word clusters, why output embeddings all look alike, tokens the model never learned, analogies |
+| [**experiments/03-benchmark-eval**](experiments/03-benchmark-eval) | My models among 9 reference models (TinyStories, Pythia, GPT-2) on 8 benchmarks, incl. grammar and bits per byte (lm-evaluation-harness, on Modal GPUs) |
 | [**notes/scaling**](notes/scaling/memory-compute-sharding.md) | Training memory, MFU, and how FSDP/ZeRO-3 shards a model across GPUs (with a diagram) |
 | [**engineering**](engineering/compute-and-cloud.md) | Practical lessons from training on a laptop and rented cloud GPUs |
 

@@ -1,7 +1,7 @@
 """Figures from results.json: scaling.png (each benchmark vs. Transformer body size), heatmap.png (every model x
 benchmark, coloured by skill above chance) and blimp_phenomena.png (BLiMP by grammar phenomenon).
 
-    uv run experiments/2026-10-benchmark-eval/plot_results.py
+    uv run experiments/03-benchmark-eval/plot_results.py
 
 blimp_phenomena.json maps BLiMP's 67 sub-tests to their phenomenon (the 'linguistics_term' field of nyu-mll/blimp).
 """

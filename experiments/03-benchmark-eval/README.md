@@ -119,8 +119,8 @@ questions the standard error is about ±3 points, so small samples are only good
 ## Reproduce
 
 ```
-uv run --with modal modal run experiments/2026-10-benchmark-eval/modal_eval.py     # Modal: up to 8 L4 GPUs, ~30 min, a few dollars
-uv run experiments/2026-10-benchmark-eval/plot_results.py                          # redraws the three figures
+uv run --with modal modal run experiments/03-benchmark-eval/modal_eval.py     # Modal: up to 8 L4 GPUs, ~30 min, a few dollars
+uv run experiments/03-benchmark-eval/plot_results.py                          # redraws the three figures
 ```
 
 Optional: `WANDB_PROJECT=<project>` logs results to Weights & Biases (needs a Modal secret named `wandb`);

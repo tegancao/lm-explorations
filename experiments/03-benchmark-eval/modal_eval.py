@@ -1,6 +1,6 @@
 """Evaluate my two small models and reference models of other sizes on standard benchmarks, on Modal GPUs.
 
-    uv run --with modal modal run experiments/2026-10-benchmark-eval/modal_eval.py
+    uv run --with modal modal run experiments/03-benchmark-eval/modal_eval.py
 
 Uses EleutherAI's lm-evaluation-harness (zero-shot) on HellaSwag, PIQA, ARC-Easy, ARC-Challenge, Winogrande, LAMBADA
 (OpenAI version), BLiMP (grammar) and WikiText (bits per byte). One NVIDIA L4 per model, up to 8 in parallel (about an

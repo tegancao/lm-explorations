@@ -14,7 +14,7 @@ Models: [`tinystories-22m`](https://huggingface.co/tegancao/tinystories-22m) (10
 [`owt-45m`](https://huggingface.co/tegancao/owt-45m) (32K). Each has two separate embedding matrices: the **input**
 embedding ("what is this token?") and the **output** embedding, the final layer ("which token could come next?").
 Token frequencies come from the public validation splits. Runs on a laptop CPU in ~2 minutes:
-`uv run experiments/2026-10-token-embeddings/embeddings.py` (writes the figures and `results.json`).
+`uv run experiments/02-token-embeddings/embeddings.py` (writes the figures and `results.json`).
 
 ## A. Do related words cluster?
 
