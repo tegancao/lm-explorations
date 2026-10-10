@@ -13,6 +13,8 @@ GPT-2-sized. GPT-2 XL numbers use its published size, ~1.5B parameters.
    syncing, and whether it's faster
 5. [Putting it together: what would GPT-2 XL cost?](#5-putting-it-together-what-would-gpt-2-xl-cost)
 
+[Further reading](#further-reading): the original papers with the full derivations
+
 ## 1. How much compute does training need?
 
 Training costs about **6 × parameters FLOPs per token**: the forward pass is ~2 FLOPs per parameter per token, and the
@@ -91,3 +93,14 @@ GPT-2 comes in four sizes: 124M, 355M, 774M and 1.5B parameters. Training the la
 6 × 1.5 × 10⁹ × 18 × 10⁹ ≈ **1.6 × 10²⁰ FLOPs**, i.e. ~180 H100-hours at 50% MFU in TF32, or ~100 in bf16 at 45%.
 It wouldn't fit on one small GPU without sharding. For reference, Karpathy's llm.c reproduced a GPT-2 1.6B-scale model
 on ~32B tokens in ~24 hours on 8 H100s (~190 H100-hours).
+
+## Further reading
+
+The full derivations, from the original papers:
+[Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361) (Kaplan et al., 2020: the
+6 × parameters × tokens compute rule) ·
+[ZeRO](https://arxiv.org/abs/1910.02054) (Rajbhandari et al., 2020: 16 bytes per parameter, and sharding) ·
+[Reducing Activation Recomputation in Large Transformer Models](https://arxiv.org/abs/2205.05198) (Korthikanti et al.,
+2022: activation memory per layer) ·
+[FlashAttention](https://arxiv.org/abs/2205.14135) (Dao et al., 2022) ·
+[PyTorch FSDP](https://arxiv.org/abs/2304.11277) (Zhao et al., 2023)
