@@ -1,5 +1,8 @@
 # How do my small models do on standard benchmarks? (October 2026)
 
+Benchmarks put small models in perspective next to big ones. They show that grammar is easy to learn, but logic,
+structured facts and the like are not.
+
 Zero-shot evaluation of my two models, [`tegancao/tinystories-22m`](https://huggingface.co/tegancao/tinystories-22m)
 and [`tegancao/owt-45m`](https://huggingface.co/tegancao/owt-45m), next to nine public reference models of different
 sizes: the original TinyStories models (Eldan & Li), EleutherAI's Pythia suite and OpenAI's GPT-2. Eight benchmarks,
@@ -136,7 +139,8 @@ Before seeing the results I wrote down what I expected:
 The miss is the most interesting result for me: with a 2× larger body than TinyStories-8M, my TinyStories model is
 slightly *below* it on BLiMP (59.8% vs. 61.5%) and LAMBADA (10.0% vs. 12.0%). The original models were most likely
 trained for much longer (their training length isn't on the model cards; mine saw about 61% of the dataset once), and
-they use a 50K-token vocabulary instead of my 10K. More training is the obvious next step.
+they use a 50K-token vocabulary instead of my 10K. Next, I'd train it longer, so it sees more tokens, and try
+shuffling the balance between the number of layers and `d_model` to see if it does better.
 
 ## Model sizes and training budgets (my models vs. GPT-2 small)
 

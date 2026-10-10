@@ -1,5 +1,7 @@
 # What do my small models' token embeddings look like? (October 2026)
 
+Token embeddings are a way to visualize how a model groups, or "sees", tokens.
+
 > **TL;DR**
 > - Even 22–45M-parameter models learn real word structure: names, colors, numbers and animals cluster, and analogies like
 >   *king − man + woman ≈ queen* work (15 of 18 in the best space).
