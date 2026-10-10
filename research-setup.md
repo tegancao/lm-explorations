@@ -13,6 +13,7 @@ Everything in this repo was done with a laptop and a pay-per-use cloud GPU.
 ## Lessons
 
 **Laptop**
+
 - Watch memory: training a BPE tokenizer on OpenWebText needed 17 GB on an 8 GB machine. Heavy swapping (low CPU use,
   many swap-ins) means stop.
 - Text generation on Apple's GPU (MPS) can reserve 5+ GB: each new sequence length gets a new cached buffer. Calling
@@ -21,6 +22,7 @@ Everything in this repo was done with a laptop and a pay-per-use cloud GPU.
   repos are always public.
 
 **Cloud GPUs (Modal)**
+
 - `.remote()` waits on your laptop, so the job dies if the laptop sleeps: use `.spawn()` with `--detach`, or keep the
   laptop awake (`caffeinate`). Save checkpoints during long runs, since standard containers can be preempted.
 - Accounts have a limit on GPUs running at once (mine: 10); cap parallel jobs with `max_containers`.
@@ -31,5 +33,6 @@ Everything in this repo was done with a laptop and a pay-per-use cloud GPU.
 - Check your credit before long runs: $26 of my first $30 went to a single 9-hour CPU job.
 
 **Environment**
+
 - `uv add` installs into the project's `.venv`; run tools with `uv run <tool>`, and try extra packages without
   installing them with `uv run --with <package>`.

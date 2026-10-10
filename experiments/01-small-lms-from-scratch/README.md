@@ -19,7 +19,7 @@ A few moments where building it myself made the difference:
   seeing training diverge or get worse taught me more than any explanation of why they're there.
 - **The engineering is half the work.** Fitting experiments onto an 8 GB laptop and a rented GPU, making runs survive
   restarts, logging, and keeping costs down took as much thought as the model itself.
-- **Small models show their limits honestly.** Chatting with my own models (see [`demos/tiny-chat`](../../demos/tiny-chat))
+- **Small models show their limits honestly.** Chatting with my own models (see [`demos/tiny-chat`](../../demos/tiny-chat/README.md))
   made the gap between "fluent" and "understands" very concrete.
 
 **Question:** what can a ~20–45M-parameter Transformer learn from 330M tokens, on simple vs. varied text?
@@ -42,7 +42,7 @@ A few moments where building it myself made the difference:
 | [`tegancao/owt-45m`](https://huggingface.co/tegancao/owt-45m) | OpenWebText | 45.2M | 4.154 | 63.7 | ~4.5 h |
 
 
-Try the models: [`demos/tiny-chat`](../../demos/tiny-chat).
+Try the models: [`demos/tiny-chat`](../../demos/tiny-chat/README.md).
 
 I followed the publicly available materials of Stanford CS336, Language Modeling from Scratch:
 [cs336.stanford.edu](https://cs336.stanford.edu/) (I used the [Spring 2025](https://cs336.stanford.edu/spring2025/)

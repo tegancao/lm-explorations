@@ -1,6 +1,6 @@
 # Tiny chat: talking to two small models I trained from scratch
 
-[`chat.py`](chat.py) is a small interactive front end to two language models I trained from scratch and published on
+[`chat.py`](https://github.com/tegancao/lm-explorations/blob/main/demos/tiny-chat/chat.py) is a small interactive front end to two language models I trained from scratch and published on
 Hugging Face: [`tegancao/tinystories-22m`](https://huggingface.co/tegancao/tinystories-22m) and
 [`tegancao/owt-45m`](https://huggingface.co/tegancao/owt-45m). You type a prompt and get back up to 250 generated
 tokens, streamed as they're produced.

@@ -58,7 +58,7 @@ GPU ends up with the sum of everyone's gradients for its own slice only, and upd
 
 ![FSDP / ZeRO-3 sharding](fsdp_sharding.png)
 
-(Figure drawn by [`make_fsdp_figure.py`](make_fsdp_figure.py).)
+(Figure drawn by [`make_fsdp_figure.py`](https://github.com/tegancao/lm-explorations/blob/main/notes/01-training-at-scale/make_fsdp_figure.py).)
 
 **How the GPUs stay in sync.** All-gather and reduce-scatter are **collective operations** (run by a library like NCCL): every GPU calls them
 together, and each waits until all have arrived. So the GPUs move through the layers in lockstep, and the slowest GPU

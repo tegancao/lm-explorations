@@ -1,0 +1,58 @@
+site_name: LM explorations
+site_description: Notes, experiments and demos from building language models from scratch
+site_url: https://tegancao.github.io/lm-explorations/
+repo_url: https://github.com/tegancao/lm-explorations
+repo_name: tegancao/lm-explorations
+edit_uri: ""
+docs_dir: .
+exclude_docs: |
+  .venv/
+  site/
+  uv.lock
+  pyproject.toml
+  .python-version
+  .github/
+  *.py
+  **/results.json
+  **/blimp_phenomena.json
+
+plugins:
+  - same-dir          # lets the site use the repo's own README files in place
+  - search
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - toc.follow
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      toggle: {icon: material/weather-night, name: Dark mode}
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      toggle: {icon: material/weather-sunny, name: Light mode}
+
+markdown_extensions:
+  - tables
+  - admonition
+  - attr_list
+  - toc: {permalink: true}
+
+nav:
+  - Home: README.md
+  - Experiments:
+      - 01 · Building my first language models: experiments/01-small-lms-from-scratch/README.md
+      - 02 · Token embeddings: experiments/02-token-embeddings/README.md
+      - 03 · Benchmark evaluation: experiments/03-benchmark-eval/README.md
+  - Notes:
+      - Training at scale: notes/01-training-at-scale/README.md
+  - Demo:
+      - Tiny chat: demos/tiny-chat/README.md
+  - Research setup: research-setup.md

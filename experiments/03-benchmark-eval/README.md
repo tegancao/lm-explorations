@@ -8,6 +8,7 @@ My two models ([`tinystories-22m`](https://huggingface.co/tegancao/tinystories-2
 test sets, [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) v0.4.13.
 
 > **TL;DR**
+>
 > - Small models learn **grammar before knowledge**: my OpenWebText model matches Pythia-70M on BLiMP (73.8% vs. 73.3%)
 >   while staying near chance on reasoning benchmarks.
 > - **The training data sets the ceiling**: TinyStories models are equally near chance on general benchmarks across a
@@ -33,7 +34,7 @@ chance line. ARC-Challenge and Winogrande are left out of this plot (everyone is
 ## Results
 
 Accuracy in % (WikiText: bits per byte, lower is better). Chance: 25% for HellaSwag and ARC; 50% for PIQA, Winogrande
-and BLiMP. Standard errors are ±0.15–1.4 points. Full numbers in [`results.json`](results.json).
+and BLiMP. Standard errors are ±0.15–1.4 points. Full numbers in [`results.json`](https://github.com/tegancao/lm-explorations/blob/main/experiments/03-benchmark-eval/results.json).
 
 | Model | Body | Total | HellaSwag | PIQA | ARC-Easy | ARC-Challenge | Winogrande | LAMBADA | BLiMP | WikiText bits/byte |
 |---|---|---|---|---|---|---|---|---|---|---|

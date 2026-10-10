@@ -3,6 +3,7 @@
 Token embeddings are a way to visualize how a model groups, or "sees", tokens.
 
 > **TL;DR**
+>
 > - Even 22–45M-parameter models learn real word structure: names, colors, numbers and animals cluster, and analogies like
 >   *king − man + woman ≈ queen* work (15 of 18 in the best space).
 > - The **output embeddings** all point in nearly the same direction (average similarity up to 0.85), because training
