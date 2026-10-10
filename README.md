@@ -55,7 +55,7 @@ Hugging Face `transformers` on CPU. Without uv: `pip install -r demos/tiny-chat/
 | [**experiments/01-small-lms-from-scratch**](experiments/01-small-lms-from-scratch) | Building my first language models: what it taught me, setup and results |
 | [**experiments/02-token-embeddings**](experiments/02-token-embeddings) | What the models' token embeddings learned: word clusters, why output embeddings all look alike, tokens the model never learned, analogies |
 | [**experiments/03-benchmark-eval**](experiments/03-benchmark-eval) | My models among 9 reference models (TinyStories, Pythia, GPT-2) on 8 benchmarks, incl. grammar and bits per byte (lm-evaluation-harness, on Modal GPUs) |
-| [**notes/scaling**](notes/scaling/memory-compute-sharding.md) | Training memory, MFU, and how FSDP/ZeRO-3 shards a model across GPUs (with a diagram) |
+| [**notes/01-training-at-scale**](notes/01-training-at-scale) | Training at scale: compute, GPU efficiency, memory, and splitting a model across GPUs (with a diagram) |
 | [**research-setup.md**](research-setup.md) | My hardware, software and costs (a laptop and a pay-per-use cloud GPU), and lessons learned |
 
 ## Models
